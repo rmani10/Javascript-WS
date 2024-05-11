@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script defer src="main.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <label for="mylength">Enter password length :</label>
+    <input type="number" id="mylength" min="1" max="12" /><br /><br />
+
+    <input type="radio" id="lowercase" />
+    <label for="lowercase">Include lowercase</label>
+
+    <input type="radio" id="uppercase" />
+    <label for="uppercase">Include uppercase</label>
+
+    <input type="radio" id="numbers" />
+    <label for="numbers">Include numbers</label>
+
+    <input type="radio" id="symbols" />
+    <label for="symbols">Include symbols</label>
+    <br /><br />
+
+    <button type="submit" class="buttons" onclick="GeneratePassword()">
+      Generate
+    </button>
+
+    <h2 id="myh2"></h2>
+  </body>
+</html>
